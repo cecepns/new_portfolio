@@ -940,6 +940,7 @@ p {
 @media only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
   .header-eight .header-image {
     margin-top: 40px;
+    height: 400px;
   }
 }
 .header-eight .header-content {
@@ -1408,20 +1409,21 @@ p {
     padding: 60px 0;
   }
 }
-.latest-news-area .single-news {
+.latest-news-area .single-portfolio {
   margin-top: 30px;
 }
-.latest-news-area .single-news .image {
+.latest-news-area .single-portfolio .image {
   position: relative;
   border-radius: 4px;
   overflow: hidden;
+  max-height: 240px;
 }
-.latest-news-area .single-news .image img {
+.latest-news-area .single-portfolio .image img {
   height: 100%;
   width: 100%;
   transition: all 0.4s ease;
 }
-.latest-news-area .single-news .image .meta-details {
+.latest-news-area .single-portfolio .image .meta-details {
   display: inline-block;
   padding: 6px 15px 6px 7px;
   border-radius: 30px;
@@ -1430,23 +1432,23 @@ p {
   right: 20px;
   bottom: 20px;
 }
-.latest-news-area .single-news .image .meta-details img {
+.latest-news-area .single-portfolio .image .meta-details img {
   height: 28px;
   width: 28px;
   border-radius: 50%;
   display: inline-block;
 }
-.latest-news-area .single-news .image .meta-details span {
+.latest-news-area .single-portfolio .image .meta-details span {
   color: var(--white);
   display: inline-block;
   margin-left: 10px;
   font-size: 10px;
   font-weight: 500;
 }
-.latest-news-area .single-news .content-body .title {
+.latest-news-area .single-portfolio .content-body .title {
   margin: 30px 0 20px 0;
 }
-.latest-news-area .single-news .content-body .title a {
+.latest-news-area .single-portfolio .content-body .title a {
   color: var(--black);
   -webkit-transition: all 0.3s ease-out 0s;
   -moz-transition: all 0.3s ease-out 0s;
@@ -1454,13 +1456,13 @@ p {
   -o-transition: all 0.3s ease-out 0s;
   transition: all 0.3s ease-out 0s;
 }
-.latest-news-area .single-news .content-body .title a:hover {
+.latest-news-area .single-portfolio .content-body .title a:hover {
   color: var(--primary);
 }
-.latest-news-area .single-news .content-body p {
+.latest-news-area .single-portfolio .content-body p {
   color: var(--dark-3);
 }
-.latest-news-area .single-news:hover .image .thumb {
+.latest-news-area .single-portfolio:hover .image .thumb {
   transform: scale(1.1) rotate(1deg);
 }
 
