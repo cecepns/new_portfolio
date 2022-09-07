@@ -345,6 +345,11 @@ p {
   position: relative;
   z-index: 5;
 }
+
+.section-title-five .container{
+  overflow-y: hidden;
+}
+
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .section-title-five {
     margin-bottom: 45px;
