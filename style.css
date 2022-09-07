@@ -2,6 +2,12 @@
 /*===========================
   COMMON css 
 ===========================*/
+
+
+html, * {
+  overflow-x: hidden;
+}
+
 :root {
   --font-family: "Inter", sans-serif;
   --primary: #155bd5;
@@ -59,6 +65,7 @@
   --shadow-6: 0px 2px 8px rgba(40, 41, 61, 0.08),
     0px 20px 32px rgba(96, 97, 112, 0.24);
 }
+
 
 body {
   font-family: var(--font-family);
@@ -186,6 +193,10 @@ p {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+}
+
+.container {
+  overflow-x: hidden;
 }
 
 @media (max-width: 767px) {
@@ -1417,6 +1428,12 @@ p {
   border-radius: 4px;
   overflow: hidden;
   max-height: 240px;
+}
+.row.grid {
+  overflow: hidden;
+}
+.latest-news-area .single-portfolio .image a{
+  overflow: hidden;
 }
 .latest-news-area .single-portfolio .image img {
   height: 100%;
