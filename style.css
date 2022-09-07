@@ -195,9 +195,9 @@ p {
   background-position: center;
 }
 
-.container {
+/* .container {
   overflow-x: hidden;
-}
+} */
 
 @media (max-width: 767px) {
   .container {
@@ -346,7 +346,7 @@ p {
   z-index: 5;
 }
 
-.section-title-five .container{
+.skills-area .container .row{
   overflow-y: hidden;
 }
 
