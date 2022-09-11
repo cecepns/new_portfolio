@@ -480,7 +480,7 @@
             <div class="service-content">
               <h4>Angular</h4>
               <p>
-                Some projects that I work on using angular, the advantages are modular and one way binding.
+                Some projects that I work on using angular, the advantages are modular and one or two way binding.
               </p>
             </div>
           </div>
@@ -659,23 +659,35 @@
     <!--======  End Section Title Five ======-->
     <div class="container">
 
-      <button class="btn btn-primary" onclick="filterPortfolio('*')">Show All</button>
-      <button class="btn btn-primary" onclick="filterPortfolio('.web')">Wordpress</button>
-      <!-- <button class="btn btn-primary" onclick="filterPortfolio('.web')">CI</button>
-      <button class="btn btn-primary" onclick="filterPortfolio('.web')">React Js</button>
-      <button class="btn btn-primary" onclick="filterPortfolio('.web')">Angular</button>
-      <button class="btn btn-primary" onclick="filterPortfolio('.web')">Next Js</button> -->
+      <div class="wrap-filter-portfolio">
+        <button class="btn btn-primary" onclick="filterPortfolio('*')">Show All</button>
+        <button class="btn btn-primary" onclick="filterPortfolio('.wp')">Wordpress</button>
+        <button class="btn btn-primary" onclick="filterPortfolio('.angular')">Angular</button>
+        <button class="btn btn-primary" onclick="filterPortfolio('.vue')">Vue JS</button>
+        <button class="btn btn-primary" onclick="filterPortfolio('.react')">React Js</button>
+        <button class="btn btn-primary" onclick="filterPortfolio('.nextjs')">Next Js</button>
+      </div>
+      
+      <div class="wrap-filter-portfolio-mobile">
+        <div class="form-group">
+          <select class="form-control" id="filter-portfolio" onchange="filterPortfolio('onchange')">
+            <option value="*">Show All</option>
+            <option value=".wp">Wordpress</option>
+            <option value=".angular">Angular</option>
+            <option value=".vue">Vue JS</option>
+            <option value=".react">React Js</option>
+            <option value=".nextjs">Next Js</option>
+          </select>
+        </div>
+      </div>
+     
 
       <div class="row grid">
         <div class="col-lg-4 col-md-6 col-12 grid-item">
           <!-- Single Portfolio -->
           <div class="single-portfolio">
             <div class="image">
-              <a href="javascript:void(0)"><img class="thumb" src="assets/images/portfolio/aia.png" alt="Blog" /></a>
-              <!-- <div class="meta-details">
-                <img class="thumb" src="assets/images/profile/profile-icon.jpeg" alt="Author" />
-                <span>BY CECEP NANDANG</span>
-              </div> -->
+              <a href="javascript:void(0)"><img class="thumb" src="assets/images/portfolio/aia.png" alt="portfolio" /></a>
             </div>
             <div class="content-body">
               <h4 class="title">
@@ -688,15 +700,11 @@
           </div>
           <!-- End Single Portfolio -->
         </div>
-        <div class="col-lg-4 col-md-6 col-12 grid-item web">
+        <div class="col-lg-4 col-md-6 col-12 grid-item wp">
           <!-- Single Portfolio -->
           <div class="single-portfolio">
             <div class="image">
               <a href="javascript:void(0)"><img class="thumb" src="assets/images/portfolio/nawakara.png" alt="nawakara" /></a>
-              <!-- <div class="meta-details">
-                <img class="thumb" src="assets/images/profile/profile-icon.jpeg" alt="Author" />
-                <span>BY CECEP NANDANG</span>
-              </div> -->
             </div>
             <div class="content-body">
               <h4 class="title">
@@ -711,15 +719,11 @@
           </div>
           <!-- End Single Portfolio -->
         </div>
-        <div class="col-lg-4 col-md-6 col-12 grid-item">
+        <div class="col-lg-4 col-md-6 col-12 grid-item angular">
           <!-- Single Portfolio -->
           <div class="single-portfolio">
             <div class="image">
-              <a href="javascript:void(0)"><img class="thumb" src="assets/images/portfolio/school.png" alt="school" /></a>
-              <!-- <div class="meta-details">
-                <img class="thumb" src="assets/images/profile/profile-icon.jpeg" alt="Author" />
-                <span>BY CECEP NANDANG</span>
-              </div> -->
+              <a href="javascript:void(0)"><img class="thumb" src="assets/images/portfolio/school.png" alt="portfolio" /></a>
             </div>
             <div class="content-body">
               <h4 class="title">
@@ -729,6 +733,82 @@
               </h4>
               <p>
                 Ma'rifatussalaam qur'anic boarding school student registration application is made to make it easier for students to register online.
+              </p>
+            </div>
+          </div>
+          <!-- End Single Portfolio -->
+        </div>
+        <div class="col-lg-4 col-md-6 col-12 grid-item wp">
+          <!-- Single Portfolio -->
+          <div class="single-portfolio">
+            <div class="image">
+              <a href="javascript:void(0)"><img class="thumb" src="assets/images/portfolio/trys.png" alt="portfolio" /></a>
+            </div>
+            <div class="content-body">
+              <h4 class="title">
+                <a href="javascript:void(0)">
+                  Company Profile TRYS
+                </a>
+              </h4>
+              <p>
+                TRYS is a Creative Digital Studio based in Jakarta. We have assisted brands in their digital marketing, advertising and branding efforts.
+              </p>
+            </div>
+          </div>
+          <!-- End Single Portfolio -->
+        </div>
+        <div class="col-lg-4 col-md-6 col-12 grid-item vue">
+          <!-- Single Portfolio -->
+          <div class="single-portfolio">
+            <div class="image">
+              <a href="javascript:void(0)"><img class="thumb" src="assets/images/portfolio/gothru.png" alt="portfolio" /></a>
+            </div>
+            <div class="content-body">
+              <h4 class="title">
+                <a href="javascript:void(0)">
+                  GoThru Website Marketing
+                </a>
+              </h4>
+              <p>
+                GoThru is a great service for anyone who creates virtual tour with Google Street View integration.
+              </p>
+            </div>
+          </div>
+          <!-- End Single Portfolio -->
+        </div>
+        <div class="col-lg-4 col-md-6 col-12 grid-item react">
+          <!-- Single Portfolio -->
+          <div class="single-portfolio">
+            <div class="image">
+              <a href="javascript:void(0)"><img class="thumb" src="assets/images/portfolio/satudata.png" alt="portfolio" /></a>
+            </div>
+            <div class="content-body">
+              <h4 class="title">
+                <a href="javascript:void(0)">
+                  Satu Data Indonesia
+                </a>
+              </h4>
+              <p>
+                Satu Data Indonesia is the official portal of Satu Data Indonesia as a form of operationalization of the release and utilization of open data
+              </p>
+            </div>
+          </div>
+          <!-- End Single Portfolio -->
+        </div>
+        <div class="col-lg-4 col-md-6 col-12 grid-item nextjs">
+          <!-- Single Portfolio -->
+          <div class="single-portfolio">
+            <div class="image">
+              <a href="javascript:void(0)"><img class="thumb" src="assets/images/portfolio/acp.png" alt="portfolio" /></a>
+            </div>
+            <div class="content-body">
+              <h4 class="title">
+                <a href="javascript:void(0)">
+                  Aksi Cipta Peduli
+                </a>
+              </h4>
+              <p>
+                Is a crowdfunding website built using next js technology for frontend and API
               </p>
             </div>
           </div>

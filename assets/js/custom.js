@@ -6,8 +6,17 @@ let iso = new Isotope( elem, {
 
     
 function filterPortfolio(filterName) {
+  console.log(filterName);
+
+    if(filterName === 'onchange') {
+      const selectOption = document.getElementById('filter-portfolio').value;
+      filterName = selectOption;
+    };
+
+    console.log(filterName);
+
     iso.arrange({
-    filter: filterName
+      filter: filterName
     });
 }
 
