@@ -4,7 +4,10 @@
 ===========================*/
 
 
-body {
+/* html, * {
+} */
+
+body, section {
   overflow-x: hidden;
 }
 
